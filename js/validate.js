@@ -1,11 +1,10 @@
 function isValid() {
-  var userName = document.getElementById('name').value
-  var surName = document.getElementById('surname').value
-  var userEmail = document.getElementById('email').value
-  var re = /^([A-Za-z0-9_\-\.]){3,}\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
+  let userName = document.getElementById('name').value
+  let surName = document.getElementById('surname').value
+  let userEmail = document.getElementById('email').value
+  let re = /^([A-Za-z0-9_\-\.]){3,}\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
 
- 
-  var messages = []
+  let messages = []
   if (userName === '' || userName == null) {
     messages.push('Prosím vyplňte položku s menom !')
     document.getElementById('error').innerText = messages.join(',')
