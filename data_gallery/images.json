@@ -1,0 +1,76 @@
+{
+  "photos": [
+    {
+      "id": "0",
+      "src": "thumbnail1.png",
+      "title": "thumb-1",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "1",
+      "src": "thumbnail2.png",
+      "title": "thumb-2",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "2",
+      "src": "thumbnail3.png",
+      "title": "thumb-3",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "3",
+      "src": "thumbnail4.png",
+      "title": "thumb-4",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "4",
+      "src": "thumbnail5.png",
+      "title": "thumb-5",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "5",
+      "src": "thumbnail6.png",
+      "title": "thumb-6",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "6",
+      "src": "thumbnail7.png",
+      "title": "thumb-7",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "7",
+      "src": "thumbnail8.png",
+      "title": "thumb-8",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "8",
+      "src": "thumbnail9.png",
+      "title": "thumb-9",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "9",
+      "src": "thumbnail10.png",
+      "title": "thumb-10",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "10",
+      "src": "thumbnail11.png",
+      "title": "thumb-11",
+      "description": "Well, this was amazing"
+    },
+    {
+      "id": "11",
+      "src": "thumbnail12.png",
+      "title": "thumb-12",
+      "description": "Well, this was amazing"
+    }
+  ]
+}

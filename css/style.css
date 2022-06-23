@@ -1,0 +1,598 @@
+/* Author: Lukas Lobl */
+
+:root {
+  --header-bg: transparent;
+  --header-bg-scroll-one: rgb(22, 27, 32);
+  --header-bg-scroll: rgb(72, 77, 82);
+  --header-font-inactive: rgb(253, 253, 255);
+  --primary-color: #000;
+  --secondary-color: #ffdc08;
+  --third-color: #dfdfe1;
+  --main-color: #fff;
+}
+
+@font-face {
+  font-family: Montserrat-bold;
+  src: url(../assets/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Merriweather-light;
+  src: url(../assets/Merriweather-Light.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Merriweather-italic;
+  src: url(../assets/Merriweather-LightItalic.ttf);
+}
+
+/* clearfix and settings */
+
+/* border-box */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* clearfix */
+
+.group:before,
+.group:after {
+  content: ' ';
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100rem;
+  height: 100%;
+}
+
+.container {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header & navigation */
+
+.header {
+  position: relative;
+}
+
+.main_nav {
+  background-color: var(--header-bg);
+  width: 100%;
+  height: 5.625rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  color: var(--header-font-inactive);
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+
+.main_nav_items {
+  color: var(--header-font-inactive);
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: Montserrat-bold;
+  display: flex;
+  padding: 0;
+}
+
+.main_nav_items li {
+  margin: 0 0.6875rem;
+  cursor: pointer;
+}
+
+.active {
+  color: var(--secondary-color);
+}
+
+/* main hero section*/
+
+.hero {
+  background-image: url(../images/space.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-family: Montserrat-bold;
+  color: var(--header-font-inactive);
+  width: 35rem;
+  padding: 0 2rem;
+  margin: 0;
+}
+
+.hero h2 {
+  font-family: Montserrat-bold;
+  color: var(--header-font-inactive);
+  font-size: 1.9rem;
+}
+
+.btn {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-family: Montserrat-bold;
+  width: 16.875rem;
+  height: 3.75rem;
+  border: none;
+  border-radius: 0.3125rem;
+  position: relative;
+  bottom: -80px;
+  cursor: pointer;
+}
+
+/* main other sections */
+
+.module_one {
+  height: 45rem;
+  background-color: var(--third-color);
+}
+
+.module_one h1 {
+  margin: 0;
+  padding: 3rem 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat-bold;
+  font-size: 2.25rem;
+}
+
+.module_one h4 {
+  font-family: Merriweather-light;
+  color: var(--primary-color);
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.card-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 23.125rem;
+  height: 20.625rem;
+  background-color: var(--main-color);
+  margin: 4rem 2rem;
+  border-radius: 0.125rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.ellipse {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -2.5rem;
+  left: 9.0625rem;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  font-family: Montserrat-bold;
+}
+
+.card p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Merriweather-light;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+/* module 2 */
+
+.module_two {
+  height: 45rem;
+  background-image: url(../images/background_space.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.module_two h1 {
+  text-transform: uppercase;
+  font-family: Montserrat-bold;
+  color: var(--main-color);
+  font-size: 2.25rem;
+  text-align: center;
+  margin: 0;
+  padding: 3rem;
+}
+
+.module_two h3 {
+  font-size: 1.125rem;
+  font-family: Merriweather-light;
+  text-align: center;
+  color: var(--main-color);
+  opacity: 0.5;
+}
+
+/* inspired by:  https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  margin: 1rem;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid #222;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+  display: flex;
+}
+
+.flip-card-front img {
+  object-fit: cover;
+}
+
+.flip-card-front .info {
+  padding: 0.5rem;
+}
+
+.flip-card-front .info h5 {
+  color: var(--main-color);
+  font-family: Montserrat-bold;
+  padding-left: 1rem;
+  text-transform: uppercase;
+}
+
+.flip-card-front .info .details {
+  color: var(--main-color);
+  font-family: Montserrat;
+  padding-left: 1rem;
+}
+.flip-card-front .info .details span {
+  padding-top: 1rem;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #161b20;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h4 {
+  font-size: 0.75rem;
+  font-family: Montserrat;
+  text-align: center;
+  color: rgb(72, 77, 82);
+}
+
+.flip-card-back blockquote {
+  font-family: Merriweather-italic;
+  font-size: 1.375rem;
+  color: var(--main-color);
+  text-align: center;
+}
+
+/* module 3 */
+.module_three {
+  height: 45rem;
+  background-image: url(../images/background_module3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.module_three h1 {
+  margin: 0;
+  color: var(--main-color);
+  font-family: Montserrat-bold;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 2rem;
+  text-transform: uppercase;
+}
+
+.module_three h4 {
+  color: var(--third-color);
+  font-family: Merriweather-light;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#gallery-wrapper {
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  /*max-width: 100%;*/
+  width: 12.5em;
+  /*max-height: 100%;*/
+  cursor: grab;
+  height: 12.5em;
+  object-fit: cover;
+  border: 1px solid #ababab;
+  border-radius: 0.5em;
+  padding: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4);
+  margin: 0.85em;
+}
+
+/*modal*/
+
+#fade {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+}
+
+.fadeModal {
+  padding: 7em;
+  z-index: 20;
+  background-color: #000;
+  border-radius: 3px;
+  position: fixed;
+  box-shadow: 3px 3px 5px var(--primary-color);
+}
+
+.fadeModal > img {
+  border-radius: 0.5em;
+  order: 1px solid #ababab;
+  padding: 3px;
+  box-shadow: 0 4px 8px 0 #dfdfe1;
+}
+
+.fadeModal > img:hover {
+  box-shadow: 0 0 2px 1px #222326;
+}
+
+#x-ko,
+#left-arrow,
+#right-arrow {
+  z-index: 20;
+  position: absolute;
+  color: var(--main-color);
+  font-size: 2em;
+}
+
+#x-ko {
+  top: 2%;
+  left: 1%;
+}
+
+#left-arrow {
+  top: 50%;
+  left: 1%;
+}
+#right-arrow {
+  top: 50%;
+  right: 1%;
+}
+
+#x-ko:hover,
+#left-arrow:hover,
+#right-arrow:hover {
+  cursor: pointer;
+  color: red;
+}
+
+#title-img,
+#description-img {
+  z-index: 20;
+  position: absolute;
+  text-align: center;
+  color: var(--third-color);
+  font-size: 1.5em;
+  font-family: Merriweather-italic;
+}
+#description-img {
+  bottom: 5%;
+  font-size: 0.85em;
+}
+#title-img {
+  top: 5%;
+}
+
+/* module4 */
+
+.module_four {
+  height: 45rem;
+  background-color: #acb1b6;
+}
+
+.module_four h1 {
+  margin: 0;
+  color: var(--primary-color);
+  font-family: Montserrat-bold;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+  text-transform: uppercase;
+}
+
+.module_four h4 {
+  color: var(--header-bg-scroll-one);
+  font-family: Merriweather-light;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.module_four .form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module_four .form-section .inputs {
+  margin: 1rem;
+}
+
+input {
+  /* margin: 1rem; */
+  width: 16.875rem;
+  height: 3rem;
+  border-radius: 5px;
+  color: #555;
+  font-family: Montserrat;
+  border: none;
+  box-shadow: inset 0px 1px 0px 0px rgba(1, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+textarea {
+  border-radius: 5px;
+  padding: 0.5rem;
+  height: 16rem;
+  width: 16rem;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #555;
+}
+
+textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #555;
+}
+
+textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #555;
+}
+
+textarea:-ms-input-placeholder {
+  color: #555;
+}
+
+textarea::placeholder {
+  color: #555;
+}
+
+.center_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#error,
+#error2,
+#error3 {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1em;
+  color: #fff;
+  font-weight: bold;
+  background: red;
+  border-radius: 0.125em;
+  opacity: 0.9;
+}
+
+/* footer */
+
+footer {
+  background-color: #161b20;
+  width: 100%;
+  height: 8.125rem;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .copyright {
+  font-family: Merriweather-italic;
+  padding-bottom: 1rem;
+}
+
+footer .last {
+  text-transform: uppercase;
+  font-family: Montserrat-bold;
+}
