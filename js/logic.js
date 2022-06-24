@@ -2,11 +2,13 @@
 
 $(document).ready(() => {
   $(window).scroll((event) => {
-    if (window.pageYOffset == 0) {
-      $('.main_nav').css({ 'background-color': 'transparent' })
-    }
-    if (window.pageYOffset > 0) {
-      $('.main_nav').css({ 'background-color': 'rgb(72, 77, 82)' })
+    if (window.pageXOffset > 600) {
+      if (window.pageYOffset == 0) {
+        $('.main_nav').css({ 'background-color': 'transparent' })
+      }
+      if (window.pageYOffset > 0) {
+        $('.main_nav').css({ 'background-color': 'rgb(72, 77, 82)' })
+      }
     }
   })
 })
@@ -62,4 +64,27 @@ $(document).ready(function () {
       1000
     )
   })
+})
+
+/* mobile settings */
+
+const menu = document.getElementById('menu')
+const closeBtn = document.getElementById('close')
+const navigation = document.getElementById('nav')
+const mainNav = document.getElementById('home')
+
+menu.addEventListener('click', () => {
+  navigation.style.display = 'block'
+  closeBtn.style.display = 'block'
+  menu.style.display = 'none'
+
+  mainNav.style.height = '12rem'
+})
+
+closeBtn.addEventListener('click', () => {
+  navigation.style.display = 'none'
+  closeBtn.style.display = 'none'
+  menu.style.display = 'block'
+
+  mainNav.style.height = '5rem'
 })

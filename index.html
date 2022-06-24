@@ -10,15 +10,19 @@
       src="https://kit.fontawesome.com/44b171361e.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/logo.png" />
   </head>
   <body>
     <header class="header">
-      <div class="main_nav" id="#home">
+      <div class="main_nav" id="home">
         <img src="images/logo.png" class="logo" alt="logo" />
-        <ul class="main_nav_items">
+        <ul class="main_nav_items" id="nav">
           <li>
             <a href="#module1" class="active">about us</a>
           </li>
@@ -32,6 +36,8 @@
             <a href="#module4">contact</a>
           </li>
         </ul>
+        <a class="icon-menu" id="menu"><i class="fa fa-bars"></i></a>
+        <a class="close" id="close"><i class="fa fa-close" style="font-size:36px"></i></a>
       </div>
     </header>
 
