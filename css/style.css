@@ -143,7 +143,7 @@ a:hover {
   color: var(--secondary-color);
 }
 
-.active {
+.actived {
   color: var(--secondary-color);
 }
 
@@ -238,6 +238,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .card {
@@ -262,8 +263,22 @@ a:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: -2.5rem;
-  left: 9.0625rem;
+  max-width: 100%;
+}
+
+#el1 {
+  top: -13%;
+  left: 37%;
+}
+
+#el2 {
+  top: -13%;
+  left: 37%;
+}
+
+#el3 {
+  top: -13%;
+  left: 37%;
 }
 
 .card h2 {
@@ -676,6 +691,88 @@ footer .last {
   font-family: Montserrat-bold;
 }
 
+/* styling for responzive module 3 */
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: 0 auto;
+  display: none;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* styling for mobile */
 
 .icon-menu {
@@ -692,6 +789,68 @@ footer .last {
   margin: 0;
   color: var(--main-color);
 }
+@media (max-width: 1250px) {
+  .module_two {
+    height: auto;
+  }
+
+  .module_three {
+    height: auto;
+  }
+
+  .module_four {
+    height: auto;
+  }
+
+  .icon-menu {
+    display: none;
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .close {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0;
+    color: var(--main-color);
+  }
+}
+
+@media (max-width: 1000px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .module_one {
+    height: auto;
+  }
+
+  .module_two {
+    height: auto;
+  }
+
+  .module_three {
+    height: auto;
+  }
+  .module_four {
+    height: auto;
+  }
+  .icon-menu {
+    display: none;
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .close {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0;
+    color: var(--main-color);
+  }
+}
 
 @media (max-width: 600px) {
   .main_nav_items {
@@ -701,6 +860,7 @@ footer .last {
   .main_nav_items li {
     padding: 0.5rem 0;
   }
+
   .icon-menu {
     display: block;
   }
@@ -730,5 +890,47 @@ footer .last {
     position: absolute;
     top: 15px;
     right: 15px;
+  }
+
+  .module_four {
+    height: auto;
+  }
+  .form-section {
+    flex-direction: column;
+  }
+
+  .center_btn {
+    flex-direction: column;
+  }
+
+  textarea {
+    border-radius: 5px;
+    padding: 0.5rem;
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .btn {
+    width: 10.875rem;
+    height: 2.75rem;
+    border: none;
+    border-radius: 0.3125rem;
+    position: relative;
+    bottom: 0;
+    cursor: pointer;
+    margin-top: 0.3rem;
+  }
+
+  .cards {
+    display: none;
+  }
+
+  .slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -24,7 +24,7 @@
         <img src="images/logo.png" class="logo" alt="logo" />
         <ul class="main_nav_items" id="nav">
           <li>
-            <a href="#module1" class="active">about us</a>
+            <a href="#module1" class="actived">about us</a>
           </li>
           <li>
             <a href="#module2">the team</a>
@@ -37,7 +37,9 @@
           </li>
         </ul>
         <a class="icon-menu" id="menu"><i class="fa fa-bars"></i></a>
-        <a class="close" id="close"><i class="fa fa-close" style="font-size:36px"></i></a>
+        <a class="close" id="close"
+          ><i class="fa fa-close" style="font-size: 36px"></i
+        ></a>
       </div>
     </header>
 
@@ -54,10 +56,11 @@
           beforu you do business with us,<br />
           you might want to know a little bit more about our company:
         </h4>
+
         <div class="card-container">
           <div class="card">
             <h2>we are cowboys</h2>
-            <div class="ellipse">
+            <div class="ellipse" id="el1">
               <img src="images/fact1.png" alt="fact1" />
             </div>
             <p class="text">
@@ -66,10 +69,11 @@
               Deal with it.
             </p>
           </div>
+
           <div class="card">
             <h2>we like to tinker</h2>
-            <div class="ellipse">
-              <img src="images/fact1.png" alt="fact1" />
+            <div class="ellipse" id="el2">
+              <img src="images/fact2.png" alt="fact2" />
             </div>
             <p class="text">
               There are a lot of things lying around on a typical Cowboy Ranch.
@@ -79,8 +83,8 @@
           </div>
           <div class="card">
             <h2>we explore space</h2>
-            <div class="ellipse">
-              <img src="images/fact1.png" alt="fact1" />
+            <div class="ellipse" id="el3">
+              <img src="images/fact3.png" alt="fact3" />
             </div>
             <p class="text">
               Once we got our first proper rocket, everything went quite fast.
@@ -98,6 +102,152 @@
           <br />
           click on the pictures to get some more information
         </h3>
+
+        <!-- Slideshow container -->
+        <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/cowboy-1.png" alt="cowboy-1" />
+                  <div class="info">
+                    <h5>Dick Harvey</h5>
+                    <div class="details">
+                      <span>CAPTAIN</span><br />
+                      <br />
+                      <small>AGE: 56</small><br />
+                      <small>missions: 13</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h4>dick's famous quote:</h4>
+                  <blockquote>
+                    „This is a small step for me, but a big step for, like, smal
+                    kid"
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/cowboy-2.png" alt="cowboy-2" />
+                  <div class="info">
+                    <h5>Richie Farhem</h5>
+                    <div class="details">
+                      <span>ENGINEER</span><br />
+                      <br />
+                      <small>AGE: 48</small><br />
+                      <small>missions: 13</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h4>richie's famous quote:</h4>
+                  <blockquote>
+                    „This is a small step for me, but a big step for, like, smal
+                    kid"
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/cowboy-3.png" alt="cowboy-3" />
+                  <div class="info">
+                    <h5>John Siracha</h5>
+                    <div class="details">
+                      <span>GUNSLINGER</span><br />
+                      <br />
+                      <small>AGE: 47</small><br />
+                      <small>missions: 13</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h4>john's famous quote:</h4>
+                  <blockquote>
+                    „This is a small step for me, but a big step for, like, smal
+                    kid"
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/cowboy-4.png" alt="cowboy-4" />
+                  <div class="info">
+                    <h5>Bert MCnamera</h5>
+                    <div class="details">
+                      <span>CAPTAIN</span><br />
+                      <br />
+                      <small>AGE: 71</small><br />
+                      <small>missions: 13</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h4>bert's famous quote:</h4>
+                  <blockquote>
+                    „This is a small step for me, but a big step for, like, smal
+                    kid"
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/cowboy-5.png" alt="cowboy-5" />
+                  <div class="info">
+                    <h5>Al Sveringe</h5>
+                    <div class="details">
+                      <span>CEO</span><br />
+                      <br />
+                      <small>AGE: 76</small><br />
+                      <small>missions: 13</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <h4>al's famous quote:</h4>
+                  <blockquote>
+                    „This is a small step for me, but a big step for, like, smal
+                    kid"
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
 
         <div class="cards container">
           <div class="flip-card">

@@ -1,14 +1,16 @@
 // setting solid background for navbar
 
 $(document).ready(() => {
+  if (window.innerWidth < 600) {
+    $('.main_nav').css({ 'background-color': 'rgb(22, 27, 32)' })
+  }
+
   $(window).scroll((event) => {
-    if (window.pageXOffset > 600) {
-      if (window.pageYOffset == 0) {
-        $('.main_nav').css({ 'background-color': 'transparent' })
-      }
-      if (window.pageYOffset > 0) {
-        $('.main_nav').css({ 'background-color': 'rgb(72, 77, 82)' })
-      }
+    if (window.pageYOffset == 0) {
+      $('.main_nav').css({ 'background-color': 'transparent' })
+    }
+    if (window.pageYOffset > 0) {
+      $('.main_nav').css({ 'background-color': 'rgb(72, 77, 82)' })
     }
   })
 })
@@ -45,12 +47,12 @@ const navItems = document.querySelectorAll('.main_nav_items li a')
 
 for (let i = 0; i < navItems.length; i++) {
   navItems[i].addEventListener('click', function () {
-    let current = document.getElementsByClassName('active')
+    let current = document.getElementsByClassName('actived')
 
     if (current.length > 0) {
-      current[0].className = current[0].className.replace('active', '')
+      current[0].className = current[0].className.replace('actived', '')
     }
-    this.className += ' active'
+    this.className += ' actived'
   })
 }
 
@@ -88,3 +90,39 @@ closeBtn.addEventListener('click', () => {
 
   mainNav.style.height = '5rem'
 })
+
+// for slideshow in responzive mobile design
+
+// <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+let slideIndex = 1
+showSlides(slideIndex)
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n))
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n))
+}
+
+function showSlides(n) {
+  let i
+  let slides = document.getElementsByClassName('mySlides')
+  let dots = document.getElementsByClassName('dot')
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none'
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(' active', '')
+  }
+  slides[slideIndex - 1].style.display = 'block'
+  dots[slideIndex - 1].className += ' active'
+}
