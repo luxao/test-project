@@ -6,7 +6,7 @@ $(document).ready(() => {
   }
 
   $(window).scroll((event) => {
-    if (window.pageYOffset == 0) {
+    if (window.innerWidth > 600 && window.pageYOffset == 0) {
       $('.main_nav').css({ 'background-color': 'transparent' })
     }
     if (window.pageYOffset > 0) {
@@ -79,7 +79,6 @@ menu.addEventListener('click', () => {
   navigation.style.display = 'block'
   closeBtn.style.display = 'block'
   menu.style.display = 'none'
-
   mainNav.style.height = '12rem'
 })
 
@@ -87,7 +86,6 @@ closeBtn.addEventListener('click', () => {
   navigation.style.display = 'none'
   closeBtn.style.display = 'none'
   menu.style.display = 'block'
-
   mainNav.style.height = '5rem'
 })
 
